@@ -13,69 +13,69 @@ class Login extends Component {
   render() {
     return (
       <div className="component-login">
-        <div class="container-content overflow-hidden">
-          <div class="forms-container">
-            <div class="signin-signup">
-              <form action="#" class="sign-in-form login-top">
-                <h2 class="title">Sign in</h2>
-                <div class="input-field">
-                  <i class="fas fa-user"></i>
+        <div className="container-content overflow-hidden">
+          <div className="forms-container">
+            <div className="signin-signup">
+              <form action="#" className="sign-in-form login-top">
+                <h2 className="title">Sign in</h2>
+                <div className="input-field">
+                  <i className="fas fa-user"></i>
                   <input type="text" placeholder="Username" />
                 </div>
-                <div class="input-field">
-                  <i class="fas fa-lock"></i>
+                <div className="input-field">
+                  <i className="fas fa-lock"></i>
                   <input type="password" placeholder="Password" />
                 </div>
-                <Link to="/dashbord">
-                  <button type="submit" class="btn solid">
+                <Link to="/admin-dashboard">
+                  <button type="submit" className="btn-log solid">
                     Login
                   </button>
                 </Link>
-                <p class="social-text">Mot de passe oublé ?</p>
-                {/* <div class="social-media">
-                  <a href="#" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
+                <p className="social-text">Mot de passe oublé ?</p>
+                {/* <div className="social-media">
+                  <a href="#" className="social-icon">
+                    <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#" class="social-icon">
-                    <i class="fab fa-twitter"></i>
+                  <a href="#" className="social-icon">
+                    <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="#" class="social-icon">
-                    <i class="fab fa-google"></i>
+                  <a href="#" className="social-icon">
+                    <i className="fab fa-google"></i>
                   </a>
-                  <a href="#" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
+                  <a href="#" className="social-icon">
+                    <i className="fab fa-linkedin-in"></i>
                   </a>
                 </div> */}
               </form>
             </div>
           </div>
 
-          <div class="panels-container">
-            <div class="panel left-panel">
-              <div class="content">
+          <div className="panels-container">
+            <div className="panel left-panel">
+              <div className="content">
                 <h3>C'est votre première fois ici ?</h3>
                 <p>Cliquez sur le bouton s'incrire</p>
                 <Link to="/register">
                   <button
                     type="submit"
-                    class="btn transparent"
+                    className="btn-log transparent"
                     id="sign-up-btn"
                   >
                     s'incrire
                   </button>
                 </Link>
               </div>
-              <img src={login} class="image" alt="" />
+              <img src={login} className="image" alt="" />
             </div>
-            {/* <div class="panel right-panel">
-              <div class="content">
+            {/* <div className="panel right-panel">
+              <div className="content">
                 <h3>C'est votre première fois ici ?</h3>
                 <p>Cliquez sur le bouton s'incrire</p>
-                <button class="btn transparent" id="sign-in-btn">
+                <button className="btn transparent" id="sign-in-btn">
                   Sign in
                 </button>
               </div>
-              <img src="" class="image" alt="" />
+              <img src="" className="image" alt="" />
             </div> */}
           </div>
         </div>
