@@ -54,7 +54,7 @@ export default class register extends Component {
                   </button>
                 </Link>
                 {/* <p className="social-text">Or Sign up with social platforms</p> */}
-                {/* <div className="social-media">
+                <div className="social-media">
                   <a href="#" className="social-icon">
                     <i className="fab fa-facebook-f"></i>
                   </a>
@@ -67,7 +67,7 @@ export default class register extends Component {
                   <a href="#" className="social-icon">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                </div> */}
+                </div>
               </form>
             </div>
           </div>

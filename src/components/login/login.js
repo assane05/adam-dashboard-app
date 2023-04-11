@@ -32,7 +32,7 @@ class Login extends Component {
                   </button>
                 </Link>
                 <p className="social-text">Mot de passe oublé ?</p>
-                {/* <div className="social-media">
+                <div className="social-media">
                   <a href="#" className="social-icon">
                     <i className="fab fa-facebook-f"></i>
                   </a>
@@ -45,7 +45,7 @@ class Login extends Component {
                   <a href="#" className="social-icon">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                </div> */}
+                </div>
               </form>
             </div>
           </div>
