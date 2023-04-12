@@ -38,22 +38,19 @@ function NavAndSidebar() {
             {/*  <!-- Sidebar --> */}
             <ul className={style} id="accordionSidebar">
               {/*  <!-- Sidebar - Brand --> */}
-              <a
+              {/* <a
                 className="sidebar-brand d-flex align-items-center justify-content-center"
                 href="#"
-              >
-                {/* <div className="sidebar-brand-icon rotate-n-15">
-                <i className="fas fa-laugh-wink"></i>
-              </div> */}
-                <div className="sidebar-brand-text mx-3">Admin</div>
-                <div className="text-center d-none d-md-inline">
+              > */}
+              {/* <div className="sidebar-brand-text mx-3">Admin</div> */}
+              {/* <div className="text-center d-none d-md-inline">
                   <button
                     className="rounded-circle border-0"
                     id="sidebarToggle"
                     onClick={changeStyle}
                   ></button>
-                </div>
-              </a>
+                </div> */}
+              {/* </a> */}
 
               {/*   <!-- Divider --> */}
               <hr className="sidebar-divider my-0" />
@@ -72,7 +69,6 @@ function NavAndSidebar() {
               <hr className="sidebar-divider" />
 
               {/*   <!-- Heading --> */}
-              {/* <div className="sidebar-heading">Interface</div> */}
 
               {/*  <!-- Nav Item - Pages Collapse Menu --> */}
               <li className="nav-item">
@@ -93,16 +89,7 @@ function NavAndSidebar() {
                   className="collapse"
                   aria-labelledby="headingTwo"
                   data-parent="#accordionSidebar"
-                >
-                  {/* <div className="bg-white py-2 collapse-inner rounded">
-                  <a className="collapse-item" href="buttons.html">
-                    Buttons
-                  </a>
-                  <a className="collapse-item" href="cards.html">
-                    Cards
-                  </a>
-                </div> */}
-                </div>
+                ></div>
               </li>
 
               {/* <!-- Nav Item - Utilities Collapse Menu --> */}
@@ -124,17 +111,7 @@ function NavAndSidebar() {
                   className="collapse"
                   aria-labelledby="headingUtilities"
                   data-parent="#accordionSidebar"
-                >
-                  {/* <div className="bg-white py-2 collapse-inner rounded">
-                  <h6 className="collapse-header">Custom Utilities:</h6>
-                  <a className="collapse-item" href="#">
-                    exemple
-                  </a>
-                  <a className="collapse-item" href="#">
-                    exemple
-                  </a>
-                </div> */}
-                </div>
+                ></div>
               </li>
 
               {/*  <!-- Divider --> */}
@@ -177,10 +154,12 @@ function NavAndSidebar() {
               {/*  <!-- Nav Item - Tasks --> */}
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="fas fa-fw fa-chart-area"></i>
-                  <span>Tasks</span>
-                </a>
+                <Link to="/admin-tasks">
+                  <a className="nav-link">
+                    <i className="fas  fa-plus"></i>
+                    <span>Tasks</span>
+                  </a>
+                </Link>
               </li>
               {/*  <!-- Nav Item - Help ! --> */}
               <li className="nav-item">

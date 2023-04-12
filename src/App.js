@@ -9,6 +9,7 @@ import ChartsView from "./components/chartsView/chartsView";
 import MessagesView from "./components/messagesView/messagesView";
 import OdersView from "./components/odersView/odersView";
 import Help from "./components/help/help";
+import TasksView from "./components/tasksView/tasksView";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
           <Route path="/charts" element={<ChartsView />} />
           <Route path="/messages" element={<MessagesView />} />
           <Route path="/orders" element={<OdersView />} />
+          <Route path="/admin-tasks" element={<TasksView />} />
           <Route path="/help" element={<Help />} />
         </Routes>
       </BrowserRouter>
