@@ -32,8 +32,26 @@ export default class register extends Component {
                   <i className="fas fa-user"></i>
                   <input type="text" placeholder="adresse" />
                 </div>
+                <div className="d-flex">
+                  <div class="col-sm-7">
+                    <input
+                      type="text"
+                      class="form-control "
+                      placeholder="ville"
+                      aria-label="ville"
+                    />
+                  </div>
+                  <div class="col-sm">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="pays"
+                      aria-label="State"
+                    />
+                  </div>
+                </div>
                 <div className="input-field">
-                  <i className="fas fa-user"></i>
+                  <i className="fas fa-phone"></i>
                   <input type="number" placeholder="Telephone" />
                 </div>
                 <div className="input-field">
@@ -91,19 +109,6 @@ export default class register extends Component {
               </div>
               <img src={Lower} className="image" alt="" />
             </div>
-            {/* <div className="panel right-panel">
-              <div className="content">
-                <h3>One of us ?</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum laboriosam ad deleniti.
-                </p>
-                <button className="btn transparent" id="sign-in-btn">
-                  Sign in
-                </button>
-              </div>
-              <img src="img/register.svg" className="image" alt="" />
-            </div> */}
           </div>
         </div>
       </div>

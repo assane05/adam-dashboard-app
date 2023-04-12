@@ -1,12 +1,14 @@
 import React from "react";
-import "./tableOrders.css";
+import "./allCustomersList.css";
 
-function TableOrders() {
+function AllCustomersList() {
   return (
-    <div className="component-table-orders">
+    <div className="component-all-customers-list">
       <div className="card shadow mb-4">
         <div className="card-header py-3">
-          <h6 className="m-0 font-weight-bold text-primary">Recent Orders</h6>
+          <h6 className="m-0 font-weight-bold text-primary">
+            Liste de tous les clients
+          </h6>
         </div>
         <div className="card-body">
           <div className="table-responsive">
@@ -18,7 +20,7 @@ function TableOrders() {
             >
               <thead>
                 <tr>
-                  <th>Order</th>
+                  <th>id</th>
                   <th>Nom</th>
                   <th>Prenom</th>
                   <th>crée</th>
@@ -109,4 +111,4 @@ function TableOrders() {
     </div>
   );
 }
-export default TableOrders;
+export default AllCustomersList;
