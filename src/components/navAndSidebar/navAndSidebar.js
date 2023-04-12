@@ -107,17 +107,18 @@ function NavAndSidebar() {
 
               {/* <!-- Nav Item - Utilities Collapse Menu --> */}
               <li className="nav-item">
-                <a
-                  className="nav-link collapsed"
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseUtilities"
-                  aria-expanded="true"
-                  aria-controls="collapseUtilities"
-                >
-                  <i className="fas fa-envelope"></i>
-                  <span>Messages</span>
-                </a>
+                <Link to="/messages">
+                  <a
+                    className="nav-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseUtilities"
+                    aria-expanded="true"
+                    aria-controls="collapseUtilities"
+                  >
+                    <i className="fas fa-envelope"></i>
+                    <span>Messages</span>
+                  </a>
+                </Link>
                 <div
                   id="collapseUtilities"
                   className="collapse"
@@ -126,17 +127,11 @@ function NavAndSidebar() {
                 >
                   {/* <div className="bg-white py-2 collapse-inner rounded">
                   <h6 className="collapse-header">Custom Utilities:</h6>
-                  <a className="collapse-item" href="utilities-color.html">
-                    Colors
+                  <a className="collapse-item" href="#">
+                    exemple
                   </a>
-                  <a className="collapse-item" href="utilities-border.html">
-                    Borders
-                  </a>
-                  <a className="collapse-item" href="utilities-animation.html">
-                    Animations
-                  </a>
-                  <a className="collapse-item" href="utilities-other.html">
-                    Other
+                  <a className="collapse-item" href="#">
+                    exemple
                   </a>
                 </div> */}
                 </div>
@@ -150,52 +145,34 @@ function NavAndSidebar() {
 
               {/*  <!-- Nav Item - Pages Collapse Menu --> */}
               <li className="nav-item">
-                <a
-                  className="nav-link collapsed"
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapsePages"
-                  aria-expanded="true"
-                  aria-controls="collapsePages"
-                >
-                  <i className="fas fa-fw fa-folder"></i>
-                  <span>Orders</span>
-                </a>
+                <Link to="/orders">
+                  <a
+                    className="nav-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapsePages"
+                    aria-expanded="true"
+                    aria-controls="collapsePages"
+                  >
+                    <i className="fas fa-fw fa-folder"></i>
+                    <span>Orders</span>
+                  </a>
+                </Link>
                 <div
                   id="collapsePages"
                   className="collapse"
                   aria-labelledby="headingPages"
                   data-parent="#accordionSidebar"
-                >
-                  {/* <div className="bg-white py-2 collapse-inner rounded">
-                  <h6 className="collapse-header">Login Screens:</h6>
-                  <a className="collapse-item" href="login.html">
-                    Login
-                  </a>
-                  <a className="collapse-item" href="register.html">
-                    Register
-                  </a>
-                  <a className="collapse-item" href="forgot-password.html">
-                    Forgot Password
-                  </a>
-                  <div className="collapse-divider"></div>
-                  <h6 className="collapse-header">Other Pages:</h6>
-                  <a className="collapse-item" href="404.html">
-                    404 Page
-                  </a>
-                  <a className="collapse-item" href="blank.html">
-                    Blank Page
-                  </a>
-                </div> */}
-                </div>
+                ></div>
               </li>
 
               {/* <!-- Nav Item - Charts --> */}
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="fas fa-fw fa-chart-area"></i>
-                  <span>Charts</span>
-                </a>
+                <Link to="/charts">
+                  <a className="nav-link">
+                    <i className="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span>
+                  </a>
+                </Link>
               </li>
               {/*  <!-- Nav Item - Tasks --> */}
 
@@ -207,10 +184,12 @@ function NavAndSidebar() {
               </li>
               {/*  <!-- Nav Item - Help ! --> */}
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="fas fa-fw fa-table"></i>
-                  <span>Help !</span>
-                </a>
+                <Link to="/help">
+                  <a className="nav-link">
+                    <i className="fas fa-fw fa-table"></i>
+                    <span>Help !</span>
+                  </a>
+                </Link>
               </li>
 
               {/* <!-- Divider --> */}

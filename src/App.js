@@ -5,6 +5,10 @@ import Login from "./components/login/index";
 import Register from "./components/register/index";
 import DashboardView from "./components/dashboardView/index";
 import AllCustomersListView from "./components/allCustomersListView/allCustomersListView";
+import ChartsView from "./components/chartsView/chartsView";
+import MessagesView from "./components/messagesView/messagesView";
+import OdersView from "./components/odersView/odersView";
+import Help from "./components/help/help";
 function App() {
   return (
     <div className="App">
@@ -14,6 +18,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/admin-dashboard" element={<DashboardView />} />
           <Route path="/liste-all-users" element={<AllCustomersListView />} />
+          <Route path="/charts" element={<ChartsView />} />
+          <Route path="/messages" element={<MessagesView />} />
+          <Route path="/orders" element={<OdersView />} />
+          <Route path="/help" element={<Help />} />
         </Routes>
       </BrowserRouter>
     </div>
