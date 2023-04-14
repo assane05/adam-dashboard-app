@@ -39,6 +39,9 @@ function NavBar() {
           {/*  <!-- Topbar --> */}
           <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
             {/*  <!-- Sidebar Toggle (Topbar) --> */}
+            <a class="navbar-brand" href="#">
+              Logo
+            </a>
             <button
               id="sidebarToggleTop"
               className="btn btn-link d-md-none rounded-circle mr-3"

@@ -46,7 +46,7 @@ function Charts() {
 
         {/* <!-- Content Row --> */}
         <div className="row">
-          <div className="col-xl-8 col-lg-7">
+          <div className="col-xl-6 col-lg-6">
             {/* <!-- Area Chart --> */}
             <div class="card shadow mb-4">
               <div class="card-header py-3">
@@ -56,10 +56,11 @@ function Charts() {
                 <div class="chart-area">
                   <Bar data={data} />
                 </div>
-                <hr />
               </div>
             </div>
             {/* <!-- Bar Chart --> */}
+          </div>
+          <div className="col-xl-6 col-lg-6">
             <div className="card shadow mb-4">
               <div className="card-header py-3">
                 <h6 className="m-0 font-weight-bold text-primary">
@@ -70,32 +71,11 @@ function Charts() {
                 <div className="chart-bar">
                   <Line data={data} />
                 </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-
-          {/* Donut Chart */}
-          <div className="col-xl-4 col-lg-5">
-            <div className="card shadow mb-4">
-              {/*  Card Header - Dropdown  */}
-              <div className="card-header py-3">
-                <h6 className="m-0 font-weight-bold text-primary">
-                  circulaire
-                </h6>
-              </div>
-              {/* Card Body */}
-              <div className="card-body">
-                <div className="chart-pie pt-4">
-                  <Pie data={data} />
-                </div>
-                <hr />
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- /.container-fluid --> */}
     </div>
   );
 }

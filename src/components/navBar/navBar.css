@@ -2,3 +2,20 @@
 .component-nav-bar{
     
 }
+@media (max-width: 834px) {
+  .view-mobile{
+    /* display: none; */
+  }
+    .sidebar {
+      /* position: ; */
+      /* display: none; */
+      /* top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%; */
+    }
+  
+    .navbar {
+      /* margin-left: 200px; */
+    }
+  }
