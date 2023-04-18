@@ -1,17 +1,17 @@
 import React from "react";
 import "./help.css";
-import NavBar from "../navBar/navBar";
-import NavAndSidebar from "../navAndSidebar/navAndSidebar";
+import NavbarNav from "../navbarNav/navbarNav";
+import Sidebar from "../sidebar/sidebar";
 
 function Help() {
   return (
-    <div className="component-help">
-      <NavBar />
-      <div className="row">
+    <div className="component-help body-theme">
+      <NavbarNav />
+      <div className="row fixing-after-header">
         <div className="col-lg-2">
-          <NavAndSidebar />
+          <Sidebar />
         </div>
-        <div className="col-lg-10">
+        <div className="col-lg-10 pt-5">
           <div class="container-fluid">
             <h1 class="h3 mb-1 text-gray-800">Pages d’aide</h1>
             <p class="mb-4"></p>

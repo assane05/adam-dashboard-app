@@ -2,3 +2,10 @@
 .component-all-customers-list-view{
     
 }
+.body-theme{
+    background-color: #f8f9fc !important;
+}
+
+.fixing-after-header {
+    margin-top: 72px !important;
+}

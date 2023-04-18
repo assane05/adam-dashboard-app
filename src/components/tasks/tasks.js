@@ -15,215 +15,182 @@ function Tasks() {
       <div className="container-fluid">
         <div className="row mb-4 mt-4">
           <div className="col-md-6">
-            <h1>Produits</h1>
-            <p>Créez, consultez et gérez vos produits</p>
-          </div>
-          {/* modal  */}
-          <div className="col-md-6">
+            <h1></h1>
+            <p>Créez, consultez et gérez vos Documents</p>
+
             <Button variant="primary" onClick={handleShow}>
-              Créer un produit
-              <i className="fas fa-plus m-2"></i>
+              Créer document <i className="fas fa-plus"></i>
             </Button>
 
             <Modal
               show={show}
               onHide={handleClose}
+              backdrop="static"
               size="lg"
-              aria-labelledby="example-modal-sizes-title-lg"
+              keyboard={false}
             >
-              <Modal.Header closeButton>
-                <Modal.Title id="example-modal-sizes-title-lg">
-                  Créer un nouveau produit
-                </Modal.Title>
-              </Modal.Header>
+              <Modal.Header closeButton></Modal.Header>
               <Modal.Body>
-                <div class="row  mt-4">
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Nom du Produit</label> */}
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div class="mb-4">
+                      <div class="g-3">
+                        <div class="col mt-3">
+                          <label class="form-label">Titre</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="titre du document"
+                          />
+                        </div>
+                        <div class="g-3">
+                          <div class="col mt-3">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="g-3">
+                        <div class="col mt-3">
+                          <label class="form-label">Label</label>
 
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Nom du Produit"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Categorie</label> */}
-
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Categorie"
-                    />
-                  </div>
-                </div>
-                <div class="row g-3 mt-4">
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Quantité en stock</label> */}
-
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Quantité en stock"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Description de l'article</label> */}
-
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Description de l'article "
-                    />
-                  </div>
-                </div>
-                <div class="row g-3 mt-4">
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Prix d'achat</label> */}
-
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Prix d'achat "
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    {/* <label class="form-label">Prix de vente</label> */}
-
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Prix de vente"
-                    />
-                  </div>
-                </div>
-                <div class="row g-3 mt-4 ">
-                  <div class="col-md-6">
-                    {/* <label class="form-label">image du Produit</label> */}
-                    <input
-                      type="file"
-                      class="form-control"
-                      placeholder="img"
-                      title="choisir une image"
-                    />
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>image</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="g-3">
+                        <div class="col mt-3">
+                          <label class="form-label">image</label>
+                          <input
+                            type="file"
+                            class="form-control"
+                            placeholder="img"
+                            title="choisir une image"
+                          />
+                        </div>
+                      </div>
+                      <div className="g-3">
+                        <div class="col mt-3 mb-4">
+                          <label
+                            for="exampleFormControlTextarea1"
+                            class="form-label"
+                          >
+                            Commentaire
+                          </label>
+                          <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div className="m-auto">
+                        <button className="btn btn-primary mb-4">
+                          Ajouter
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Modal.Body>
-              <Modal.Footer>
-                {/* <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button> */}
-                <Button variant="primary" onClick={handleClose}>
-                  Ajouter
-                </Button>
-              </Modal.Footer>
             </Modal>
           </div>
         </div>
+        <div className="row">
+          {/* <div className="col-lg-4">
+            <div class="card shadow mb-4">
+              <div class="g-3">
+                <div class="col mt-3">
+                  <label class="form-label">Titre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="titre du document"
+                  />
+                </div>
+                <div class="g-3">
+                  <div class="col mt-3">
+                    <label class="form-label">Date</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="g-3">
+                <div class="col mt-3">
+                  <label class="form-label">Label</label>
 
-        <div className="card shadow mb-4">
-          {/* <div className="card-header py-3">
-            <h6 className="m-0 font-weight-bold text-primary">Liste des produits</h6>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>image</option>
+                    {/* <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option> 
+                  </select>
+                </div>
+              </div>
+              <div class="g-3">
+                <div class="col mt-3">
+                  <label class="form-label">image</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    placeholder="img"
+                    title="choisir une image"
+                  />
+                </div>
+              </div>
+              <div className="g-3">
+                <div class="col mt-3 mb-4">
+                  <label for="exampleFormControlTextarea1" class="form-label">
+                    Commentaire
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div className="m-auto">
+                <button className="btn btn-primary mb-4">Ajouter</button>
+              </div>
+            </div>
           </div> */}
-          <div className="card-body">
-            <div className="table-responsive">
-              <table
-                className="table table-bordered"
-                id="dataTable"
-                width="100%"
-                cellSpacing="0"
-              >
-                <thead>
-                  <tr>
-                    <th>Nom produit</th>
-                    <th>Categorie</th>
-                    <th>Prix d'achat</th>
-                    <th>Prix de vente</th>
-                    <th>Quantité</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th>Nom produit</th>
-                    <th>Categorie</th>
-                    <th>Prix d'achat</th>
-                    <th>Prix de vente</th>
-                    <th>Quantité</th>
-                    <th>Actions</th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                  <tr>
-                    <td>Banane</td>
-                    <td>Fruit</td>
-                    <td>500 XOF</td>
-                    <td>575 XOF</td>
-                    <td>5 kg</td>
-                    <td>Actions</td>
-                  </tr>
-                </tbody>
-              </table>
+
+          <div className="col-lg-12">
+            <div className="row">
+              <div className="col-lg-3">
+                <div class="card shadow mb-4">
+                  <div class="card-body">doc 1</div>
+                </div>
+              </div>
+              <div className="col-lg-3">
+                <div class="card shadow mb-4">
+                  <div class="card-body">doc 2</div>
+                </div>
+              </div>
+              <div className="col-lg-3">
+                <div class="card shadow mb-4">
+                  <div class="card-body">doc 3</div>
+                </div>
+              </div>
+              <div className="col-lg-3">
+                <div class="card shadow mb-4">
+                  <div class="card-body">Actualités</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* AJOUTER PRODUIT X */}
       </div>
     </div>
   );

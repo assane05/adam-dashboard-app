@@ -1,0 +1,799 @@
+
+.component-navbar-nav{
+    
+}
+/* .right-sidebar{
+    position: absolute;
+    margin-left: 77% !important;
+} */
+.form-input-dashboard-coach {
+    border: 0.5px solid #4e73df;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .form-input-dashboard-coach:focus {
+    border: 0.5px solid #4e73df;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  
+  .modal-content-coach {
+    padding: 1rem;
+    border: 0;
+    position: relative;
+    border-radius: 0;
+  }
+  
+  .datapicker-custom-bakeli {
+    width: 100%;
+  }
+  
+  .select-all-label-send-task-to {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4e73df;
+  }
+  
+  .btn-icon-table {
+    padding: 0;
+    margin: 0 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .btn-icon-table:hover {
+    color: #4e73df;
+  }
+  
+  .icon-btn-icon-table {
+    color: #b1b1b1;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .icon-btn-icon-table:hover {
+    color: #4e73df;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .todo-badge {
+    background-color: #f04f43;
+    color: #fff;
+  }
+  
+  .doing-badge {
+    background: #ff9800;
+    border-radius: 5px;
+  }
+  
+  .done-badge {
+    background: #4e73df;
+    border-radius: 5px;
+  }
+  
+  .badge {
+    padding: 0.3em 0.6em;
+  }
+  
+  .titre_utilisateurs {
+    position: relative;
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-top: -15px;
+  }
+  
+  /* === BASE HEADING === */
+  
+  .titre_utilisateurs::before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #4e73df;
+  }
+  .titre_utilisateurs::after {
+    width: 100px;
+    height: 2px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 15px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #4e73df;
+  }
+  
+  .titre_lieux {
+    position: relative;
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-top: -15px;
+  }
+  .titre_lieux::before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #f34336;
+  }
+  .titre_lieux::after {
+    width: 100px;
+    height: 2px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 15px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #f34336;
+  }
+  .titre_diplomes {
+    position: relative;
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-top: -15px;
+  }
+  
+  .titre_diplomes::before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #ffa233;
+  }
+  .titre_diplomes::after {
+    width: 100px;
+    height: 2px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 15px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #ffae33;
+    margin-bottom: 10px;
+  }
+  
+  .titre_evenements {
+    position: relative;
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+    color: #080808;
+    transition: all 0.4s ease 0s;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-top: -15px;
+  }
+  
+  .titre_evenements::before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #e74933;
+  }
+  .titre_evenements::after {
+    width: 100px;
+    height: 2px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 15px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #e74933;
+  }
+  
+  .add {
+    color: #4e73df;
+  }
+  .btn-vert-add {
+    background: #ff9800;
+    color: #fff;
+    /* margin-bottom: 50px; */
+    border-radius: 10px;
+    float: right;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .btn-vert-add:hover {
+    background: #fff;
+    text-decoration: none;
+  }
+  .active {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+  }
+  .lienstatistique {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+    float: right;
+  }
+  
+  .icon-statistique {
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    background: #ff9800;
+    border-radius: 3px;
+  }
+  .row.mb-3.right-elements {
+    display: grid;
+  }
+  .start-hidden {
+    display: none;
+  }
+  .side-navbar-custom {
+    background-color: rgb(78, 115, 223);
+    /* background-image: linear-gradient(rgb(78, 115, 223) 10%, rgb(34, 74, 190) 100%); */
+    /* background-size: cover; */
+    padding: 0;
+  }
+  .icon-side-navbar-custom {
+    width: 20px;
+    margin-right: 25px;
+  }
+  .nav-link-side-navbar-custom {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 2rem;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in;
+    border-right: 5px solid transparent;
+    border-radius: 0;
+  }
+  .nav-link-side-navbar-custom:hover {
+    background-color: #fff !important;
+    color: #4e73df !important;
+    border-radius: 0;
+    transition: 0.2s ease-in;
+    border-right: 5px solid #ff9800;
+  }
+  .nav-link-side-navbar-custom.active {
+    color: #fff !important;
+    background-color: transparent !important;
+    transition: 0.2s ease-in;
+    border-right: 5px solid #ff9800;
+    border-radius: 0;
+  }
+  .nav-link-side-navbar-custom.active:hover {
+    background-color: rgba(255, 255, 255, 0.952) !important;
+    color: #4e73df !important;
+    transition: 0.2s ease-in;
+    border-right: 5px solid #ff9800;
+    border-radius: 0;
+  }
+  .container-nav-vertical {
+    background: #4e73df;
+    padding: 3rem 0 10rem;
+    position: fixed;
+    max-width: 16.666667%;
+    width: 100%;
+    height: 100%;
+  }
+  .coach-info {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-height: 200px;
+    width: 100%;
+    background-color: orange;
+    margin-top: 30px;
+  }
+  
+  
+  
+  
+  /* responsive */
+  /* Extra large  */
+  @media(min-width:1200){
+  
+  }
+  @media(max-width:1199px){
+      .titre-banner-connexion {
+          font-size: 79px !important;
+      }
+      .slogan-banner-connexion {
+          font-weight: 600 !important;
+          font-size: 17px !important;
+      }
+      .container-nav-vertical{
+          max-width: 16.666667%;
+          width: 100%;
+      }
+      .content-nav-fil-actualite-livraison{
+          max-width: 16.666667%;
+          width: 100%;
+      }
+  }
+  
+  /* Large  */
+  @media(max-width:991px){
+    /* .right-sidebar{
+        position: absolute;
+        margin-left: 40% !important;
+    } */
+      .no-view-tablette{
+          display: none;
+      }
+      .avatar-rs-custom {
+          margin-right: 0 !important;
+      }
+      .container-nav-vertical {
+          padding: 1rem 0 !important;
+          position: relative !important;
+          max-width: 100% !important;
+          margin-top: 0;
+      }
+      .container-nav-mobile{
+          background-color: #4e73df;
+      }
+      .content-nav-fil-actualite-livraison {
+          position: relative !important;
+          max-width: 100%;
+      }
+      .navigation-previous-account {
+          left: -10px !important;
+      }
+  }
+  
+  /* Medium */
+  
+  @media(min-width:992px){
+      .no-display-desktop{
+          display: none !important;
+      }
+      .content-nav-fil-actualite-livraison{
+          max-width: 13.666667%;
+      }
+  }
+  
+  
+  @media(max-width:840px){
+      .modal-responsive-md{
+          width: 100% !important;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+  }
+  
+  @media(min-width:768px){
+      
+  }
+  
+  @media(max-width:767px){
+      .h2, h2 {
+          font-size: 1.5rem;
+      }
+      .h3, h3 {
+          font-size: 1.2rem;
+      }
+      .h5, h5 {
+          font-size: 1rem;
+      }
+      
+      .titre-banner-connexion {
+          font-size: 74px !important;
+      }
+      .logo-connexion {
+          margin-bottom: 60px !important;
+          margin-top: 20px !important;
+      }
+      .btn-connexion {
+          margin-bottom: 50px !important;
+      }
+      .banner-connexion-page {
+          height: 70vh !important;
+      }
+      .fixing-after-header {
+          margin-top: 72px !important;
+      }
+      .navigation-previous{
+          position: absolute !important;
+      }
+      .img-item-statistics-dashboard {
+          width: 25px !important;
+      }
+      .groupe-titre-on-coach-dashboard {
+          font-size: 19px !important;
+          line-height: 21px !important;
+      }
+      .content-container-syllabus-item-back {
+          font-size: 12px !important;
+          line-height: 15px !important;
+      }
+      .container-syllabus-item-back {
+          padding: 2rem 1rem 3rem !important;
+      }
+      .modal-responsive-sm{
+          width: 100% !important;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      .icon-btn-action-bakeliste-details {
+          width: 11px !important;
+      }
+      .btn-action-bakeliste-details {
+          font-size: 8px !important;
+          padding: 8px 10px !important;
+      }
+      .delete-btn-action-bakeliste-details {
+          font-size: 8px !important;
+          padding: 8px 10px !important;
+      }
+      .position-info-bakeliste-header{
+          margin-right: 150px !important;
+      }
+  }
+  
+  @media(max-width:575px){
+    .right-sidebar{
+        /* position: absolute;
+        margin-left: 30% !important;
+        display: flex !important; */
+    }
+      .no-view-mobile{
+          display: none !important;
+      }
+      .titre-banner-connexion {
+          font-size: 60px !important;
+      }
+      .logo-header {
+          width: 80px !important;
+      }
+      .h-connexion-form {
+          font-size: 22px !important;
+      }
+      .modal-details-coach {
+          padding: 2rem 2rem 3rem !important;
+      }
+      .link-aide {
+          font-size: 12px !important;
+      }
+      .depart-pointage-text {
+          font-size: 17px !important;
+          line-height: 1.3;
+      }
+      
+      .chiffre-item-statistics-dashboard {
+          font-size: 40px !important;
+          line-height: 50px !important;
+      }
+      .img-item-statistics-dashboard {
+          width: 30px !important;
+      }
+      .img-item-statistics-dashboard.icon2 {
+          height: 25px;
+          width: 20px !important;
+      }
+      .separateur-livrable-bakeliste-item {
+          border-left: 0 !important;
+          border-top: 1px solid #C4C4C4;
+          padding: 15px!important;
+      }
+      .icon-link-groupe-whatsapp{
+          right: 0;
+          width: 40px !important;
+      }
+      .lien-utile-bakeliste-tache-card {
+          font-size: 12px !important;
+      }
+      .form-input-dashboard-coach {
+          padding-left: 1rem !important;
+      }
+      .avatar-fil-actualite {
+          width: 36px !important;
+      }
+      .content-nav-fil-actualite-livraison {
+          position: relative !important;
+          max-width: 100% !important;
+          margin-bottom: 20px;
+          margin-top: 0 !important;
+      }
+      .btn-like-fil-actualite-card {
+          right: auto !important;
+          left: 15px !important;
+      }
+      .input-comment-fil-actualite {
+          padding-right: 40px !important;
+      }
+      .titre-syllabus-details-card {
+          font-size: 20px !important;
+          line-height: 20px !important;
+      }
+      .icon-content-syllabus-item {
+          margin-right: 5px !important;
+      }
+      .rs-modal-content {
+          padding: 1rem !important;
+      }
+      .card-dashboard {
+          padding: 30px 20px !important;
+      }
+      .modal-contact-us {
+          font-size: 20px !important;
+      }
+      .nom-bakeliste-details {
+          font-size: 19px !important;
+          line-height: 20px !important;
+      }
+      .formation-bakeliste-details {
+          font-size: 15px !important;
+          line-height: 17px !important;
+      }
+      .position-info-bakeliste-header{
+          margin-right: 0px !important;
+      }
+      .position-action-bakeliste-details {
+          position: relative !important;
+          top: 40px !important;
+          right: 0 !important;
+          left: 0 !important;
+      }
+      .btn-action-bakeliste-details {
+          font-size: 11px !important;
+          padding: 15px 15px !important;
+          margin-bottom: 10px !important;
+      }
+      .delete-btn-action-bakeliste-details {
+          font-size: 11px !important;
+          padding: 15px 15px !important;
+          margin-bottom: 10px !important;
+      }
+      .text-content-informations-bakeliste-details.mail-bakeliste{
+          font-size: 16px !important;
+      }
+      .icon-avatar-account{
+          width: 19px !important;
+      }
+      
+  }
+  
+  @media(min-width:576px){
+      .no-display-tablette{
+          display: none !important;
+      }
+      .icon-link-groupe-whatsapp{
+          left: 0;
+      }    
+      .modal-contact-us {
+          font-size: 25px !important;
+      }
+  }
+  
+  @media(max-width:420px){
+      .text-content-informations-bakeliste-details{
+          font-size: 13px !important;
+      }
+      .text-content-informations-bakeliste-details.mail-bakeliste{
+          font-size: 13px !important;
+      }
+  }
+  @media (max-width: 350px){
+      .titre-banner-connexion {
+          font-size: 40px !important;
+      }
+      .slogan-banner-connexion {
+          font-weight: 400 !important;
+          font-size: 14px !important;
+      }
+      .icon-link-groupe-whatsapp {
+          width: 35px !important;
+      }
+      .etiquette-syllabus-item {
+          font-weight: 500 !important;
+          font-size: 12px !important;
+      }
+      .titre-content-syllabus-item {
+          font-size: 20px !important;
+          line-height: 20px !important;
+      }
+      .modal-contact-us {
+          font-size: 15px !important;
+      }
+      .input-comment-fil-actualite {
+          padding-left: 30px !important;
+          padding-right: 35px !important;
+          font-size: 10px !important;
+      }
+      .rs-input-group.rs-input-group-inside .rs-input-group-addon {
+          padding: 11px 5px 8px 10px !important;
+      }
+  }
+  
+  
+  @media (max-width: 1199px) and (min-width: 992px){
+      .img-item-statistics-dashboard {
+          width: 25px !important;
+      }
+      .chiffre-item-statistics-dashboard {
+          font-size: 40px !important;
+          line-height: 50px !important;
+      }
+      .img-item-statistics-dashboard.icon2 {
+          height: 25px;
+          width: 20px !important;
+      }
+      .nav-link-side-navbar-custom{
+          padding: .5rem 1.5rem !important;
+          font-size: 13px !important;
+      }
+      .btn-reunion-zoom-card-dashboard-bakeliste {
+          padding: .8rem 0rem .8rem 1.5rem !important;
+          font-size: 10px !important;
+      }
+      .icon-btn-reunion-zoom-card-dashboard-bakeliste {
+          width: 23px !important;
+      }
+      .btn-like-fil-actualite-card {
+          right: 8px !important;
+      }
+      .icon-btn-like-fil-actualite-card {
+          width: 16px;
+      }
+      .icon-side-navbar-custom {
+          width: 16px !important;
+      }
+      
+      .nav-fil-actualite-livraison {
+          font-size: 12px !important;
+          line-height: 15px !important;
+          padding: 6px 0 !important;
+      }
+      .etiquette-syllabus-details {
+          font-size: 9px !important;
+          line-height: 9px !important;
+      }
+      .titre-syllabus-details-card {
+          font-size: 19px !important;
+      }
+      .btn-add-with-icon-plus-circle {
+          font-size: 10px !important;
+      }
+      .icon-add {
+          font-size: 20px !important;
+      }
+  
+      .groupe-titre-on-coach-dashboard {
+          font-size: 19px !important;
+          line-height: 21px !important;
+      }
+      .container-syllabus-item-back {
+          padding: 1rem 1rem 3rem !important;
+      }
+      .content-container-syllabus-item-back {
+          font-size: 12px !important;
+          line-height: 14px !important;
+      }
+  }
+  @media (max-width: 991px) and (min-width: 768px){
+      .titre-banner-connexion {
+          font-size: 65px !important;
+      }
+      .card-status-info {
+          padding: 15px 10px !important;
+      }
+      .etiquette-syllabus-item {
+          font-weight: 500 !important;
+          font-size: 12px !important;
+      }
+      .titre-content-syllabus-item {
+          font-size: 20px !important;
+          line-height: 20px !important;
+      }
+      .container-syllabus-item-back {
+          padding: 2rem 1rem 3rem !important;
+      }
+      .content-container-syllabus-item-back {
+          font-size: 12px !important;
+          line-height: 16px !important;
+      }
+      .titre-container-syllabus-item-back {
+          font-size: 12px !important;
+          line-height: 17px !important;
+          margin-bottom: 5px !important;
+      }
+  }
+  
+  @media (max-width: 850px) and (min-width: 800px){
+  
+  }
