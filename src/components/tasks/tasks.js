@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./tasks.css";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import FeatherIcon from "feather-icons-react";
+import { Link } from "react-router-dom";
 
 function Tasks() {
   const [show, setShow] = useState(false);
@@ -170,17 +171,144 @@ function Tasks() {
             <div className="row">
               <div className="col-lg-3">
                 <div class="card shadow mb-4">
-                  <div class="card-body">doc 1</div>
+                  <div class="card-body">
+                    <div className="py-3 d-flex flex-row align-items-center justify-content-between">
+                      <div className="box-deux">
+                        <span>document 3</span>
+                      </div>
+                      <div className="dropdown no-arrow">
+                        <a
+                          className="dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div
+                          className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <Link to="/update-to-folders">
+                            <a className="dropdown-item" href="#">
+                              Modifier
+                            </a>
+                          </Link>
+                          <a className="dropdown-item" href="#">
+                            Supprimer
+                          </a>
+                          <div className="dropdown-divider"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <FeatherIcon
+                        icon="folder"
+                        size="40"
+                        fill="#ffca18"
+                        stroke="none"
+                        stroke-width=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-3">
                 <div class="card shadow mb-4">
-                  <div class="card-body">doc 2</div>
+                  <div class="card-body">
+                    <div className="py-3 d-flex flex-row align-items-center justify-content-between">
+                      <div className="box-deux">
+                        <span>document 3</span>
+                      </div>
+                      <div className="dropdown no-arrow">
+                        <a
+                          className="dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div
+                          className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <Link to="/update-to-folders">
+                            <a className="dropdown-item" href="#">
+                              Modifier
+                            </a>
+                          </Link>
+                          <a className="dropdown-item" href="#">
+                            Supprimer
+                          </a>
+                          <div className="dropdown-divider"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <FeatherIcon
+                        icon="folder"
+                        size="40"
+                        fill="#ffca18"
+                        stroke="none"
+                        stroke-width=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-3">
                 <div class="card shadow mb-4">
-                  <div class="card-body">doc 3</div>
+                  <div class="card-body">
+                    <div className="py-3 d-flex flex-row align-items-center justify-content-between">
+                      <div className="box-deux">
+                        <span>document 3</span>
+                      </div>
+                      <div className="dropdown no-arrow">
+                        <a
+                          className="dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div
+                          className="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <Link to="/update-to-folders">
+                            <a className="dropdown-item" href="#">
+                              Modifier
+                            </a>
+                          </Link>
+                          <a className="dropdown-item" href="#">
+                            Supprimer
+                          </a>
+                          <div className="dropdown-divider"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <FeatherIcon
+                        icon="folder"
+                        size="40"
+                        fill="#ffca18"
+                        stroke="none"
+                        stroke-width=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-3">

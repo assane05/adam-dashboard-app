@@ -1,6 +1,5 @@
 import React from "react";
 import "./allCustomersListView.css";
-import Dashboard from "../dashboard/dashboard";
 import AllCustomersList from "../allCustomersList/allCustomersList";
 import NavbarNav from "../navbarNav/navbarNav";
 import Sidebar from "../sidebar/sidebar";

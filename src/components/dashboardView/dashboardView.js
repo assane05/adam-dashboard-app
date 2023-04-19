@@ -1,8 +1,6 @@
 import React from "react";
 import "./dashboardView.css";
 import Dashboard from "../dashboard/index";
-import NavAndSidebar from "../navAndSidebar/navAndSidebar";
-import NavBar from "../navBar/navBar";
 import NavbarNav from "../navbarNav/navbarNav";
 import Sidebar from "../sidebar/sidebar";
 

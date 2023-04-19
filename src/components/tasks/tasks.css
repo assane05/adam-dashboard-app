@@ -2,3 +2,21 @@
 .component-tasks{
     
 }
+.box{
+    background: #FFDCD1;
+    border-radius: 10px;
+    padding: 10px 19px;
+    color: #e74040;
+}
+.box-deux{
+    background: #B9EAA8;
+    border-radius: 10px;
+    padding: 10px 19px;
+    color: #2dc071;
+}
+.box-trois{
+    background: #fff5ea;
+    border-radius: 10px;
+    padding: 10px 19px;
+    color: #ffbf81;
+}

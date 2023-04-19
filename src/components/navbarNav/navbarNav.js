@@ -8,43 +8,47 @@ function NavbarNav() {
     <div className="component-navbar-nav">
       <div id="content-wrapper" className="d-flex flex-column">
         <div id="content">
-          <nav className="navbar-expand-lg navbar-light bg-white px-lg-5 py-md-3 shadow topbar fixed-top">
-            <div className="d-flex justify-content-between align-items-center">
+          <nav className="navbar navbar-expand-lg  navbar-light bg-white shadow topbar fixed-top">
+            {/* px-lg-5 py-md-3 */}
+            <div className="container-fluid">
+              <a className="d-none d-lg-block welcome-header m-0 mt-3">Logo </a>
+
               <button
-                className="navbar-toggler"
+                class="navbar-toggler"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
               </button>
               {/* <NavLink className=" mr-lg-5 mr-0" to="/">
                 <img className="logo-header" alt="" />
               </NavLink> */}
-              <p className="d-none d-lg-block welcome-header m-0 mt-3">Logo </p>
-              <form className="d-none d-sm-inline-block form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                {/* milieu-for-desktop */}
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control bg-light border-0 small"
-                    placeholder=" Recherche "
-                    aria-label="Search"
-                    aria-describedby="basic-addon2"
-                  />
-                  <div className="input-group-append">
-                    <button className="btn btn-primary" type="button">
-                      <i className="fas fa-search fa-sm"></i>
-                    </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form className="d-none d-sm-inline-block milieu-for-desktop form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                  {/* milieu-for-desktop */}
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control bg-light border-0 small"
+                      placeholder=" Recherche "
+                      aria-label="Search"
+                      aria-describedby="basic-addon2"
+                    />
+                    <div className="input-group-append">
+                      <button className="btn btn-primary" type="button">
+                        <i className="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
               {/* <Avatar className="avatar-rs-custom no-display-desktop">RS</Avatar> */}
 
-              <ul className="navbar-nav ml-auto right-sidebar">
+              <ul className="navbar-nav ml-auto">
                 {/*  <!-- Nav Item - Search Dropdown (Visible Only XS) --> */}
                 <li className="nav-item dropdown no-arrow d-sm-none">
                   <a
@@ -225,7 +229,7 @@ function NavbarNav() {
               </div>
             </div>
 
-            <div className="collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div className="d-block d-lg-none">
                 <div className="container-nav-vertical">
                   <div

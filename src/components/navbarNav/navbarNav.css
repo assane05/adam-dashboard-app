@@ -2,6 +2,14 @@
 .component-navbar-nav{
     
 }
+.milieu-for-desktop{
+    margin-left: 30% !important;
+  }
+  @media (max-width: 834px) {
+    .milieu-for-desktop{
+      margin-left: 0% !important;
+    }
+}
 /* .right-sidebar{
     position: absolute;
     margin-left: 77% !important;
