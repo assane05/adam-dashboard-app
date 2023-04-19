@@ -13,34 +13,31 @@ function UpdateFolders() {
         </div>
         <div className="col-lg-8 pt-4">
           <div className="container-fluid">
-            <div class="card shadow mb-4">
+            <div className="card shadow mb-4">
               <div className="row">
                 <div className="col-lg-12">
-                  <div class="mb-4">
-                    <div class="g-3">
-                      <div class="col mt-3">
-                        <label class="form-label">Titre</label>
+                  <div className="mb-4">
+                    <div className="g-3">
+                      <div className="col mt-3">
+                        <label className="form-label">Titre</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           placeholder="titre du document"
                         />
                       </div>
-                      <div class="g-3">
-                        <div class="col mt-3">
-                          <label class="form-label">Date</label>
-                          <input type="date" class="form-control" />
+                      <div className="g-3">
+                        <div className="col mt-3">
+                          <label className="form-label">Date</label>
+                          <input type="date" className="form-control" />
                         </div>
                       </div>
                     </div>
-                    <div class="g-3">
-                      <div class="col mt-3">
-                        <label class="form-label">Label</label>
+                    <div className="g-3">
+                      <div className="col mt-3">
+                        <label className="form-label">Label</label>
 
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
+                        <select className="form-select" aria-label="Default">
                           <option selected>image</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
@@ -48,25 +45,20 @@ function UpdateFolders() {
                         </select>
                       </div>
                     </div>
-                    <div class="g-3">
-                      <div class="col mt-3">
-                        <label class="form-label">image</label>
+                    <div className="g-3">
+                      <div className="col mt-3">
+                        <label className="form-label">image</label>
                         <input
                           type="file"
-                          class="form-control"
+                          className="form-control"
                           placeholder="img"
                           title="choisir une image"
                         />
                       </div>
                     </div>
                     <div className="g-3">
-                      <div class="col mt-3 mb-4">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                        >
-                          Commentaire
-                        </label>
+                      <div className="col mt-3 mb-4">
+                        <label className="form-label">Commentaire</label>
                         <textarea
                           class="form-control"
                           id="exampleFormControlTextarea1"

@@ -11,6 +11,7 @@ import OdersView from "./components/odersView/odersView";
 import Help from "./components/help/help";
 import TasksView from "./components/tasksView/tasksView";
 import UpdateFolders from "./components/updateFolders/updateFolders";
+import ArticlesView from "./components/articlesView/articlesView";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
           <Route path="/admin-tasks" element={<TasksView />} />
           <Route path="/help" element={<Help />} />
           <Route path="/update-to-folders" element={<UpdateFolders />} />
+          <Route path="/liste-des-articles" element={<ArticlesView />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -61,8 +61,18 @@ function Sidebar() {
             className="nav-link nav-link-side-navbar-custom my-2"
             to="/help"
           >
-            <i className="fas fa-fw fa-table icon-side-navbar-custom"></i>
+            <FeatherIcon
+              icon="help-circle"
+              className="icon-side-navbar-custom"
+            />
             Help
+          </NavLink>
+          <NavLink
+            className="nav-link nav-link-side-navbar-custom my-2"
+            to="/liste-des-articles"
+          >
+            <i className="fas fa-fw fa-table icon-side-navbar-custom"></i>
+            Article
           </NavLink>
         </div>
       </div>

@@ -2,10 +2,15 @@
 .component-tasks{
     
 }
+.margin-card-actualite{
+    /* padding-left: 3rem;
+    padding-right: -4rem !important; */
+}
 .box{
     background: #FFDCD1;
     border-radius: 10px;
-    padding: 10px 19px;
+    /* width: 50px; */
+    padding: 5px 9px;
     color: #e74040;
 }
 .box-deux{
@@ -17,6 +22,11 @@
 .box-trois{
     background: #fff5ea;
     border-radius: 10px;
-    padding: 10px 19px;
+    padding: 5px 9px;
+
     color: #ffbf81;
+}
+.right-btn-add-article{
+    margin-left: 36% !important;
+    /* float: center; */
 }

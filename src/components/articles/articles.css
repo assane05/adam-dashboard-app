@@ -1,0 +1,16 @@
+
+.component-articles{
+    
+}
+.carte-date-sale,
+.carte-date-sale:hover{
+    background: #E74040;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 51px;
+    height: 24px;
+    padding: 0px 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}

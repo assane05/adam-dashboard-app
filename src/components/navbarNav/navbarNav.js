@@ -8,7 +8,7 @@ function NavbarNav() {
     <div className="component-navbar-nav">
       <div id="content-wrapper" className="d-flex flex-column">
         <div id="content">
-          <nav className="navbar navbar-expand-lg  navbar-light bg-white shadow topbar fixed-top">
+          <nav className="navbar navbar-expand-md  navbar-light bg-white shadow topbar fixed-top">
             {/* px-lg-5 py-md-3 */}
             <div className="container-fluid">
               <a className="d-none d-lg-block welcome-header m-0 mt-3">Logo </a>
@@ -27,7 +27,7 @@ function NavbarNav() {
               {/* <NavLink className=" mr-lg-5 mr-0" to="/">
                 <img className="logo-header" alt="" />
               </NavLink> */}
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse">
                 <form className="d-none d-sm-inline-block milieu-for-desktop form-inline ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                   {/* milieu-for-desktop */}
                   <div className="input-group">
