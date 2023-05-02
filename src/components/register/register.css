@@ -52,7 +52,7 @@ input {
   z-index: 5;
 }
 
-form {
+/* form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +62,7 @@ form {
   overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-}
+} */
 
 form.sign-up-form {
   /* opacity: 0; */
@@ -70,7 +70,7 @@ form.sign-up-form {
 }
 
 form.sign-in-form {
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .title {
@@ -286,15 +286,7 @@ form.sign-in-form {
   left: 25%;
 }
 
-.container-content.sign-up-mode form.sign-up-form {
-  opacity: 1;
-  z-index: 2;
-}
 
-.container-content.sign-up-mode form.sign-in-form {
-  opacity: 0;
-  z-index: 1;
-}
 
 .container-content.sign-up-mode .right-panel .image,
 .container-content.sign-up-mode .right-panel .content {
@@ -413,9 +405,9 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
-  form {
+  /* form {
     padding: 0 1.5rem;
-  }
+  } */
   .btn-log.transparent {
     width: 150px;
     height: 41px;

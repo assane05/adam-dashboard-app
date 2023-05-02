@@ -7,7 +7,7 @@ function Articles() {
     <div className="component-articles">
       <div className="container-fluid">
         <div className="mb-4">Bienvenue dans la page articles</div>
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-md-3">
             <div class="card shadow border-none">
               <img src={Two} class="card-img" alt="..." />
@@ -65,7 +65,7 @@ function Articles() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-md-3">
             <div class="card shadow border-none">
               <img src={Two} class="card-img" alt="..." />

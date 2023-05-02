@@ -23,20 +23,22 @@ function NavHomePage() {
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-item" to="/">
+                <a class="nav-link" href="#">
                   Documents
                 </a>
-              </li>
-              <Link to="/liste-des-articles">
-                <li class="nav-item">
-                  <a class="nav-link">Actualités</a>
-                </li>
+              </Link>
+              <Link class="nav-item" to="/liste-des-articles">
+                <a class="nav-link">Actualités</a>
               </Link>
             </ul>
             <span class="navbar-text">
-              <button className="btn">s'inscrire</button>
-              <button className="btn">connexion</button>
+              <Link to="/register">
+                <button className="btn">s'inscrire</button>
+              </Link>
+              <Link to="/login">
+                <button className="btn">connexion</button>
+              </Link>
             </span>
           </div>
         </div>
