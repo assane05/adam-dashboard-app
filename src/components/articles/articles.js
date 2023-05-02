@@ -65,6 +65,64 @@ function Articles() {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-3">
+            <div class="card shadow border-none">
+              <img src={Two} class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <span className="carte-date-sale">Date</span>
+              </div>
+              <div className="card-body">
+                <div className="">
+                  <h4>Titre</h4>
+                  <p>Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div class="card shadow border-none">
+              <img src={Two} class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <span className="carte-date-sale">Date</span>
+              </div>
+              <div className="card-body">
+                <div className="">
+                  <h4>Titre</h4>
+                  <p>Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div class="card shadow border-none">
+              <img src={Two} class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <span className="carte-date-sale">Date</span>
+              </div>
+              <div className="card-body">
+                <div className="">
+                  <h4>Titre</h4>
+                  <p>Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div class="card shadow border-none">
+              <img src={Two} class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <span className="carte-date-sale">Date</span>
+              </div>
+              <div className="card-body">
+                <div className="">
+                  <h4>Titre</h4>
+                  <p>Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -10,10 +10,15 @@
       margin-left: 0% !important;
     }
 }
-/* .right-sidebar{
-    position: absolute;
-    margin-left: 77% !important;
-} */
+.navbar-toggler{
+   border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 .form-input-dashboard-coach {
     border: 0.5px solid #4e73df;
     box-sizing: border-box;

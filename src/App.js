@@ -12,12 +12,14 @@ import Help from "./components/help/help";
 import TasksView from "./components/tasksView/tasksView";
 import UpdateFolders from "./components/updateFolders/updateFolders";
 import ArticlesView from "./components/articlesView/articlesView";
+import HomePageView from "./components/homePageView/homePageView";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/" element={<HomePageView />} />
+          <Route exact path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/admin-dashboard" element={<DashboardView />} />
           <Route path="/liste-all-users" element={<AllCustomersListView />} />

@@ -1,17 +1,16 @@
 import React from "react";
-import "./articlesView.css";
-
-import Articles from "../articles/articles";
+import "./homePageView.css";
+import HomePage from "../homePage/homePage";
 import NavHomePage from "../navHomePage/navHomePage";
 
-function ArticlesView() {
+function HomePageView() {
   return (
-    <div className="component-articles-view">
+    <div className="component-home-page-view">
       <NavHomePage />
       <div className="container-fluid fixing-after-header-home">
-        <Articles />
+        <HomePage />
       </div>
     </div>
   );
 }
-export default ArticlesView;
+export default HomePageView;
