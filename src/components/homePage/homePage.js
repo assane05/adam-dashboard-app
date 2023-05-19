@@ -2,10 +2,13 @@ import React from "react";
 import "./homePage.css";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
+import BannerHome from "../bannerHome/bannerHome";
 function HomePage() {
   return (
     <div className="component-home-page">
       <div className="container-fluid">
+        {/* inclusion de la page banniere */}
+        <BannerHome />
         <div className="row">
           <div className="col-lg-12">
             <div className="row">

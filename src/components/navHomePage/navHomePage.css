@@ -2,3 +2,13 @@
 .component-nav-home-page{
     
 }
+.btn-connexion-home-page{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: rgba(69,69,69,.2);
+    border-radius: 9999px;
+    height: 2.75rem;
+}

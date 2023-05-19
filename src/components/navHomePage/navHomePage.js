@@ -37,7 +37,9 @@ function NavHomePage() {
                 <button className="btn">s'inscrire</button>
               </Link>
               <Link to="/login">
-                <button className="btn">connexion</button>
+                <button className="btn btn-connexion-home-page">
+                  connexion
+                </button>
               </Link>
             </span>
           </div>

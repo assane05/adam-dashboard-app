@@ -67,13 +67,13 @@ function Sidebar() {
             />
             Help
           </NavLink>
-          <NavLink
+          {/* <NavLink
             className="nav-link nav-link-side-navbar-custom my-2"
             to="/liste-des-articles"
           >
             <i className="fas fa-fw fa-table icon-side-navbar-custom"></i>
             Article
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </div>

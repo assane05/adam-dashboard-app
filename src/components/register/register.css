@@ -1,7 +1,7 @@
 
-.component-register{
+/* .component-register{
     
-}
+} */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
@@ -30,7 +30,7 @@ input {
   top: 0;
   left: 0;
   margin-top: 5%;
-  /* margin-bottom: 5%; */
+  margin-bottom: 5%;
 }
 .forms-container {
   position: absolute;
@@ -52,7 +52,7 @@ input {
   z-index: 5;
 }
 
-/* form {
+form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,16 +62,16 @@ input {
   overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+}
+
+/* form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
 } */
 
-form.sign-up-form {
-  /* opacity: 0; */
-  /* z-index: 1; */
-}
-
-form.sign-in-form {
-  /* z-index: 2; */
-}
+/* form.sign-in-form {
+  z-index: 2;
+} */
 
 .title {
   font-size: 2.2rem;
@@ -405,9 +405,9 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
-  /* form {
+  form {
     padding: 0 1.5rem;
-  } */
+  }
   .btn-log.transparent {
     width: 150px;
     height: 41px;
@@ -433,7 +433,7 @@ form.sign-in-form {
     left: 40%;
   }
   .signin-signup {
-    /* width: 100%; */
+    width: 100%;
     top: 116%;
   }
   .container-content.sign-up-mode:before {
