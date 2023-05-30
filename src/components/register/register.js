@@ -15,7 +15,7 @@ function Register() {
   const [email, setEmail] = useState("");
 
   function formSubmit() {
-    console.warn(firstname, lastname, address, ville, city, phone, email);
+    console.warn(firstname, lastName, address, ville, city, phone, email);
     let data = { firstname, lastname, address, ville, city, phone, email };
     fetch("http://localhost:4000/api/register", {
       method: "POST",
@@ -45,7 +45,7 @@ function Register() {
                     type="text"
                     placeholder="Nom"
                     value={firstname}
-                    name="firstname"
+                    name="firstName"
                     onChange={(e) => setFisrtname(e.target.value)}
                   />
                 </div>
@@ -55,7 +55,7 @@ function Register() {
                     type="text"
                     placeholder="prenom"
                     value={lastname}
-                    name="lastname"
+                    name="lastName"
                     onChange={(e) => setLastname(e.target.value)}
                   />
                 </div>
