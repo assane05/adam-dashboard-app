@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-// import "./App.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Login from "./components/login/index";
 import Register from "./components/register/index";
@@ -14,6 +14,8 @@ import UpdateFolders from "./components/updateFolders/updateFolders";
 import ArticlesView from "./components/articlesView/articlesView";
 import HomePageView from "./components/homePageView/homePageView";
 import LoginAdmin from "./components/loginAdmin/loginAdmin";
+import PrivateRoute from "./PrivateRoute";
+
 function App() {
   return (
     <div className="App">
@@ -34,6 +36,8 @@ function App() {
           <Route path="/liste-des-articles" element={<ArticlesView />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
+     
     </div>
   );
 }

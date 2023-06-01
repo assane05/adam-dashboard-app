@@ -237,6 +237,11 @@ form {
   pointer-events: none;
   padding: 3rem 12% 2rem 17%;
 } */
+.error-message{
+  color: red;
+  font-size: 13px;
+  width: 100%;
+}
 
 .panel .content {
   color: #fff;
