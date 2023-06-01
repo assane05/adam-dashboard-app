@@ -27,7 +27,7 @@ function Register() {
     {
       navigate('/')
     }
-  }, [])
+  }, []);
 
   const navigate = useNavigate();
   const [firstName, setFisrtname] = useState("");
@@ -189,11 +189,8 @@ function Register() {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   />
               </div>
-              <p className='error-message'>{errors.confirmpassword?.message}</p>
-              {/* <Link to="/"> */}
+              <p className='error-message'>{errors.confirmpassword?.message}</p>         
               <button className="btn-log inscription">s'inscrire</button>
-              {/* </Link> */}
-              {/* <p className="social-text">Or Sign up with social platforms</p> */}
               <div className="social-media">
                 <a href="#" className="social-icon">
                   <i className="fab fa-facebook-f"></i>
@@ -237,7 +234,4 @@ function Register() {
   );
 }
 export default Register;
-// export default connect(
-//     ({ register }) => ({ ...register }),
-//     dispatch => bindActionCreators({ ...registerActions }, dispatch)
-//   )( register );
+
