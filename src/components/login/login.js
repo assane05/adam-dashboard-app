@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import axios from "axios";
 
 const schema = yup.object({
   email: yup.string().required("Email est requis").email('Email n\'est pas valide'),
@@ -29,29 +30,26 @@ function Login () {
     resolver: yupResolver(schema)
   })
 
-  async function formSubmit() {
-    let data = { email, password };
-    let result = await fetch("http://127.0.0.1:8000/api/v1/login", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-    result = await result.json();
-    console.warn(result);
-    localStorage.setItem('user',JSON.stringify(result));
-       navigate('/');
+   function formSubmit() {
+    // let data = { email, password };
+    try {
+      axios.post('http://127.0.0.1:8000/api/v1/login', {
+        email: email,
+        password: password,
+        
+      }).then((result) => {
+        localStorage.setItem('user',JSON.stringify(result));
+        console.log(result)
+        toast.success('Connexion réussie')
+        navigate("/")
+      })
+        .catch(error => {
+          toast.error('Email ou mot de passe incorrect')
+        })
+    }
+    catch (err) {
 
-    // .then((result) => {
-    //   // console.warn("result", result);
-    //   result.json().then((response) => {
-    //     console.warn("response", response);
-    //     navigate("/");
-    //     toast.success('Connexion réussie')
-    //   });
-    // });
+    }
   }
     return (
       <div className="component-login">
