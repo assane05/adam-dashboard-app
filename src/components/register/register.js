@@ -6,8 +6,8 @@ import Lower from "../../img/registe.svg";
 // import { bindActionCreators } from "redux";
 // import * as registerActions from "../../store/register/actions";
 function Register() {
-  const [firstname, setFisrtname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [firstName, setFisrtname] = useState("");
+  const [lastName, setLastname] = useState("");
   const [address, setAddress] = useState("");
   const [ville, setVille] = useState("");
   const [city, setCity] = useState("");
@@ -15,8 +15,8 @@ function Register() {
   const [email, setEmail] = useState("");
 
   function formSubmit() {
-    console.warn(firstname, lastName, address, ville, city, phone, email);
-    let data = { firstname, lastname, address, ville, city, phone, email };
+    console.warn(firstName, lastName, address, ville, city, phone, email);
+    let data = { firstName, lastName, address, ville, city, phone, email };
     fetch("http://localhost:4000/api/register", {
       method: "POST",
       headers: {
@@ -44,7 +44,7 @@ function Register() {
                   <input
                     type="text"
                     placeholder="Nom"
-                    value={firstname}
+                    value={firstName}
                     name="firstName"
                     onChange={(e) => setFisrtname(e.target.value)}
                   />
@@ -54,7 +54,7 @@ function Register() {
                   <input
                     type="text"
                     placeholder="prenom"
-                    value={lastname}
+                    value={lastName}
                     name="lastName"
                     onChange={(e) => setLastname(e.target.value)}
                   />
