@@ -1,8 +1,18 @@
 import React from "react";
 import "./navHomePage.css";
-import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
+import { Link, useNavigate } from "react-router-dom";
 
 function NavHomePage() {
+
+  let user = JSON.parse(localStorage.getItem('user'))
+  const navigate = useNavigate()
+  const logout = () =>{
+    localStorage.clear();
+    toast.success('A bientot')
+    navigate('/login')
+  }
+
   return (
     <div className="component-nav-home-page">
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top topbar">
@@ -32,16 +42,23 @@ function NavHomePage() {
                 <a class="nav-link">Actualités</a>
               </Link>
             </ul>
-            <span class="navbar-text">
-              <Link to="/register">
-                <button className="btn">s'inscrire</button>
-              </Link>
-              <Link to="/login">
-                <button className="btn btn-connexion-home-page">
-                  connexion
+            
+              {localStorage.getItem('user') ?
+                <button onClick={logout} className="btn btn-connexion-home-page">
+                  Deconnexion
                 </button>
-              </Link>
-            </span>
+                :
+                <span class="navbar-text">
+                <Link to="/register">
+                  <button className="btn">s'inscrire</button>
+                </Link>
+                <Link to="/login">
+                  <button className="btn btn-connexion-home-page">
+                    connexion
+                  </button>
+                </Link>
+                </span>
+              }
           </div>
         </div>
       </nav>
