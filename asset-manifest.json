@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/adam-dashboard-app/static/css/main.7422687c.css",
+    "main.js": "/adam-dashboard-app/static/js/main.80f61862.js",
+    "static/js/787.b0a3d6ec.chunk.js": "/adam-dashboard-app/static/js/787.b0a3d6ec.chunk.js",
+    "static/media/two.png": "/adam-dashboard-app/static/media/two.756810360beb9c4359b9.png",
+    "static/media/dossier.png": "/adam-dashboard-app/static/media/dossier.71f57137b2e9e0da47d2.png",
+    "static/media/account.svg": "/adam-dashboard-app/static/media/account.b67e9d9d031853a899de7c7d78252921.svg",
+    "static/media/login.svg": "/adam-dashboard-app/static/media/login.753498d38526a756a546a8af93adc7fe.svg",
+    "static/media/registe.svg": "/adam-dashboard-app/static/media/registe.921f6dc58ac1744c78e910b3fe390e9b.svg",
+    "index.html": "/adam-dashboard-app/index.html",
+    "main.7422687c.css.map": "/adam-dashboard-app/static/css/main.7422687c.css.map",
+    "main.80f61862.js.map": "/adam-dashboard-app/static/js/main.80f61862.js.map",
+    "787.b0a3d6ec.chunk.js.map": "/adam-dashboard-app/static/js/787.b0a3d6ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7422687c.css",
+    "static/js/main.80f61862.js"
+  ]
+}
